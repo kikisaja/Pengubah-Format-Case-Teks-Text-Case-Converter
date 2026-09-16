@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter - Pengubah Format Case Teks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <header>
+            <h1>Text Case Converter</h1>
+            <p>Ubah format kapitalisasi teks secara instan dan hitung statistik karakter secara real-time.</p>
+        </header>
+
+        <div class="converter-card">
+            <!-- Area Input Teks -->
+            <div class="input-section">
+                <label for="textInput">Masukkan Teks Anda:</label>
+                <textarea id="textInput" placeholder="Ketik atau tempel teks di sini..."></textarea>
+            </div>
+
+            <!-- Tombol Pilihan Konversi -->
+            <div class="button-grid">
+                <button class="btn-convert" data-case="uppercase">UPPERCASE</button>
+                <button class="btn-convert" data-case="lowercase">lowercase</button>
+                <button class="btn-convert" data-case="titlecase">Title Case</button>
+                <button class="btn-convert" data-case="sentencecase">Sentence case</button>
+                <button class="btn-convert" data-case="camelcase">camelCase</button>
+                <button class="btn-convert" data-case="kebabcase">kebab-case</button>
+                <button class="btn-convert" data-case="snakecase">snake_case</button>
+                <button class="btn-convert" data-case="alternatingcase">aLtErNaTiNg cAsE</button>
+            </div>
+
+            <!-- Tombol Aksi Tambahan -->
+            <div class="action-buttons">
+                <button id="btnCopy" class="btn-action btn-copy">Salin Teks</button>
+                <button id="btnClear" class="btn-action btn-clear">Bersihkan Teks</button>
+            </div>
+
+            <!-- Statistik Teks -->
+            <div class="stats-bar">
+                <div class="stat-item">Karakter: <strong id="charCount">0</strong></div>
+                <div class="stat-item">Kata: <strong id="wordCount">0</strong></div>
+                <div class="stat-item">Kalimat: <strong id="sentenceCount">0</strong></div>
+                <div class="stat-item">Paragraf: <strong id="paragraphCount">0</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
